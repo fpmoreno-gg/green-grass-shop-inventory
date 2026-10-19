@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Mirrors firestore.rules: any authenticated request (the app signs in
+// anonymously) may read/write. Tighten before going beyond internal shop use.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

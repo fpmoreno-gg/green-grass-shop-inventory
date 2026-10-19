@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <title>Green Grass — Shop Inventory</title>
+    <meta name="description" content="Green Grass Shop Inventory — préstamos, consumibles y trailers." />
+
+    <!-- PWA: "Add to Home Screen" on iPhone/iPad is the only install path for this app (no App Store build). -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Shop Inventory" />
+    <!-- "default" draws a real, opaque iOS status bar (not an overlay), so
+         page content can never scroll behind/through it — black-translucent
+         requires every sticky element to track safe-area-inset-top exactly,
+         which is fragile and invisible to browser-based testing. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" href="/icon.webp" />
+    <link rel="icon" href="/icon.webp" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2D3C39" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2D3C39" />
+    <meta name="color-scheme" content="light" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

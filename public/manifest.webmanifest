@@ -1,0 +1,16 @@
+{
+  "name": "Green Grass Shop Inventory",
+  "short_name": "Shop Inventory",
+  "description": "Préstamos y consumibles para Green Grass Landscape.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F6F1",
+  "theme_color": "#2D3C39",
+  "icons": [
+    { "src": "/icon.webp", "sizes": "192x192", "type": "image/webp" },
+    { "src": "/icon.webp", "sizes": "512x512", "type": "image/webp" },
+    { "src": "/icon.webp", "sizes": "512x512", "type": "image/webp", "purpose": "maskable" }
+  ]
+}
